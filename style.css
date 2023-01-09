@@ -1,0 +1,102 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Roboto Mono', monospace;
+}
+#canvas{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  display: block;
+  z-index: -1;
+  background-image: url('./img/stars.jpg');
+}
+nav ul{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+nav ul li a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 10px;
+
+}
+nav ul li:hover a{
+  border-bottom: #fff 2px solid;
+
+}
+.textContainer{
+  width: 90%;
+  margin: auto;
+
+}
+.item{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.reverse{
+  flex-direction: row-reverse;
+}
+.content{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  max-width: 600px;
+}
+.content h2{
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+.content p{
+  text-align: justify;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+.planet {
+  display: flex;
+  width: 500px;
+  height: 500px;
+
+}
+.System{
+  width: 100%;
+  text-align: center;
+}
+.System h1{
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+#main{
+  
+  background-color: transparent;
+  z-index: 3;
+}
+@media (max-width: 600px) {
+  .textContainer{
+    width: 100%;
+  }
+  .item{
+    flex-direction: column;
+    width: 100%;
+  }
+  .planet{
+    width: 100%;
+  }
+}
